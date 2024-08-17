@@ -1,4 +1,6 @@
 $fn=30;
+retention_fn = 20;
+
 tolerance = .1; // [0.1, 0.2, 0.777]
 
 wall_thickness = 2; // [ 1 : .1 : 4]
@@ -407,6 +409,7 @@ module mega_lid(){
 
     color("hotpink")
     union() {
+        // retention bump
         for (i = [wall_thickness]){
             for (j = [0]){
                 translate([
@@ -414,8 +417,8 @@ module mega_lid(){
                     lid_interior.y/2,
                     mega_lid_interior.z + j - tolerance
                     ])
-                scale([1 - 2* tolerance,3 - 3*tolerance, 2/3 - tolerance])
-                sphere(wall_radius);
+                scale([1 - 2* tolerance,3 - 1*tolerance, 2/3 ])
+                sphere(wall_radius, $fn = retention_fn);
             }
         }
         core_lid(closed = agents == "onside" , delta_closed = true);
@@ -581,8 +584,8 @@ module card_lid(){
             
             translate( [ - wall_radius ,+ tolerance,0 ] ){
                 rail( end_width + 2 * wall_thickness);
-                translate([ 0, -rail_depth + 2 * tolerance, - rail_depth])
-                cube([ end_width + 2 * wall_thickness , rail_depth , 2 * rail_depth]);
+                translate([ 0, -rail_depth + 2 * tolerance, - rail_depth - epsilon])
+                cube([ end_width + 2 * wall_thickness , rail_depth , 2 * ( rail_depth  + epsilon )]);
             }
             
             translate( (mega_lid_interior.y - 3 * tolerance) * yv )
@@ -590,8 +593,8 @@ module card_lid(){
             {
             
             rail( end_width + 2 * wall_thickness);
-            translate([ 0, - 2 * tolerance , - rail_depth])
-                cube([ end_width + 2 * wall_thickness , rail_depth , 2 * rail_depth]);
+            translate([ 0, - 2 * tolerance , - rail_depth - epsilon])
+                cube([ end_width + 2 * wall_thickness , rail_depth , 2 * ( rail_depth + epsilon)]);
             }
             
             
@@ -599,6 +602,8 @@ module card_lid(){
 
         }
 
+
+        // retention and thumb grips
         for (i = [wall_thickness, lid_interior.x]){
             for (j = [0 , wall_thickness]){
                 for (k = ( lid_interior.y/2 - 2.5 * wall_thickness) * [ -1, 0, 1]){
@@ -609,7 +614,7 @@ module card_lid(){
                         mega_lid_interior.z + j
                         ])
                     scale([1,3,2/3])
-                    sphere(wall_radius);
+                    sphere(wall_radius, $fn = retention_fn);
                     }
                 }
             }
