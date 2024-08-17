@@ -4,7 +4,6 @@ tolerance = .1; // [0.1, 0.2, 0.777]
 wall_thickness = 2; // [ 1 : .1 : 4]
 epsilon_scale = 10; // [0:8]
 
-
 /* [bin dimensions] */
 
 agents = "onside"; // ["upright", "onside"]
@@ -24,7 +23,6 @@ delta_altitude_long = 30;
 delta_thick = 2.2;
 delta_step_long = 3;
 
-
 /* [Lid version] */
 mega = true; // [true, false]
 closed_core = true; // [true, false]
@@ -42,7 +40,6 @@ cut = false; // [true, false]
 cut_x = 0; // [0: 200]
 cut_y = 0; // [0: 200]
 cut_z = 0; // [0: 50]
-
 
 main();
 
@@ -70,19 +67,12 @@ module main(){
     }
 }
 
-
-
-
-
-
 wt2 = wall_thickness * 2;
 wall_radius = wall_thickness/2;
 
 sqrt2 = sqrt(2);
 
 practically_zero = 10^-8;
-
-
 
 $offset=0;
 function pz(val, $offset=0) = (val == 0) ? practically_zero : val + $offset;
@@ -140,8 +130,6 @@ delta_offset = end_width - wall_thickness - 2*stack_hypot  - wt2;
 
 delta_box_height = 2 * abs(stair_height) + wall_thickness;
 
-
-
 // lid interiors
 lid_interior = [
 end_width - 1 * wall_thickness + tolerance,
@@ -153,8 +141,6 @@ mega_lid_interior = lid_interior + [ 0, 0,  top_deck + tolerance
 ];
 
 lift = headroom + wall_thickness;
-
-
 
 module segmented_test() {
 
@@ -274,7 +260,7 @@ module core_lid(closed = false, delta_closed = false ){
   union() {
     lid_r2 = wall_radius + tolerance/2;
 
-    // //top
+    //top
 
     // delta grip
     translate(- tolerance * yv)
@@ -401,10 +387,9 @@ module core_lid(closed = false, delta_closed = false ){
     // lower rails
     union() {
         translate([0,0,lower_rail_height]) {
-            
+
             rail_hull();
-            
-            
+
             translate([ 0, -tolerance, 0 ]) {
                 rail(end_width - 3 * wall_radius );
             }
@@ -418,10 +403,7 @@ module core_lid(closed = false, delta_closed = false ){
 }
 }
 
-
-
 module mega_lid(){
-
 
     color("hotpink")
     union() {
@@ -442,12 +424,6 @@ module mega_lid(){
         translate(-tolerance * xv)
         union() {
             lid_r2 = wall_radius + tolerance/2;
-            // cube(mega_lid_interior);
-
-            // //top
-            // translate(dot_z(mega_lid_interior) - tolerance * yv)
-            // translate((wall_radius)*[-1,-1, 1])
-            // wall( dot_xy(mega_lid_interior) );
 
             // delta grip
             translate(- tolerance * yv)
@@ -474,7 +450,6 @@ module mega_lid(){
 
             union() {
 
-
                 // deck box top
                 deck_translate = [
                 - wall_thickness,
@@ -487,10 +462,9 @@ module mega_lid(){
                 mega_lid_interior.z - delta_box_height - wall_thickness - tolerance
                 - wall_thickness - tolerance
                 ];
-                
-                
+
                 // card lid Support
-                
+
                 front_lift = max(delta_box_height , headroom);
 
                 // front support
@@ -507,7 +481,6 @@ module mega_lid(){
                   mega_lid_interior.z - front_lift - wall_thickness - tolerance  - wall_thickness - tolerance
                   ], closed = true );
 
-                
                 // delta
                 translate(deck_translate)
                 rounded_box(
@@ -517,7 +490,7 @@ module mega_lid(){
                     deck_interior.z
                     ]
                     , closed = true );
-                
+
                 // agent
                 translate(deck_translate + (deck_interior.y - rail_support_offest)* yv)
                 rounded_box(
@@ -526,10 +499,10 @@ module mega_lid(){
                     pz(rail_support_offest),
                     deck_interior.z
                     ]
-                    
+
                     ,
                     closed = true );
-                
+
                 // back
                 translate(deck_translate)
                 rounded_box(
@@ -540,50 +513,41 @@ module mega_lid(){
 
             // upper rails
             union() {
-                
-              
-              
+
               translate((mega_lid_interior.z + wall_radius - lift)*zv)
               rail_hull();
-                
-                
-                
-                translate([ 0, 0, mega_lid_interior.z + wall_radius - lift]) {
-                    translate(- tolerance * yv){
-                        intersection() {
-                            cube( wall_thickness * [end_width,2,1], center=true);
-                            union(){
-                                translate( [ - wall_radius, - wall_radius , 0 ])
-                                cube([end_width - wall_thickness , wall_radius , rail_depth ]);
-                                translate( - wall_radius * xv )
-                                rail(end_width - wall_thickness );
-                            }
+
+              translate([ 0, 0, mega_lid_interior.z + wall_radius - lift]) {
+                translate(- tolerance * yv){
+                    intersection() {
+                        cube( wall_thickness * [end_width,2,1], center=true);
+                        union(){
+                            translate( [ - wall_radius, - wall_radius , 0 ])
+                            cube([end_width - wall_thickness , wall_radius , rail_depth ]);
+                            translate( - wall_radius * xv )
+                            rail(end_width - wall_thickness );
                         }
                     }
+                }
 
-                    translate( mega_lid_interior.y*yv)
-                    translate(- tolerance * yv){
-                        intersection() {
-                            cube( wall_thickness * [end_width,2,1], center=true);
-                            union(){
-                                translate( [ - wall_radius, 0 , 0 ])
-                                cube([end_width - wall_thickness , wall_radius , rail_depth ]);
-                                translate( - wall_radius * xv )
-                                rail(end_width - wall_thickness );
-                            }
+                translate( mega_lid_interior.y*yv)
+                translate(- tolerance * yv){
+                    intersection() {
+                        cube( wall_thickness * [end_width,2,1], center=true);
+                        union(){
+                            translate( [ - wall_radius, 0 , 0 ])
+                            cube([end_width - wall_thickness , wall_radius , rail_depth ]);
+                            translate( - wall_radius * xv )
+                            rail(end_width - wall_thickness );
                         }
                     }
                 }
             }
-            
-            
-            
-            
         }
+
     }
 }
-
-
+}
 
 module card_lid(){
     // card lid
@@ -591,7 +555,7 @@ module card_lid(){
     difference() {
 
         union() {
-            
+
             // main
             translate([ wall_radius, 0, mega_lid_interior.z ])
             cube([
@@ -599,20 +563,18 @@ module card_lid(){
                 mega_lid_interior.y - 2* tolerance,
                 wall_thickness
                 ]);
-            
+
             // flat end
             translate([ wall_radius, 0, mega_lid_interior.z  + wall_radius ])
             rotate(-90*xv)
             cylinder( lid_interior.y - 2 * tolerance, wall_radius, wall_radius);
-            
+
             // agent end
             translate([ wall_radius + mega_lid_interior.x- tolerance, 0, mega_lid_interior.z  + wall_radius ])
             rotate(-90*xv)
             cylinder( lid_interior.y - 2 * tolerance, wall_radius, wall_radius);
-            
-            
-        }
 
+        }
 
         // upper rails
         translate([0,0,mega_lid_interior.z + wall_radius ]) {
@@ -625,8 +587,7 @@ module card_lid(){
                 rail( end_width + 2 * wall_thickness);
             }
         }
-        
-        
+
         for (i = [wall_thickness, lid_interior.x]){
             for (j = [0 , wall_thickness]){
                 translate([
@@ -646,16 +607,15 @@ module rail(length = end_width + 2 * epsilon ){
         rotate([45,0,0])
         translate([length/2,0,0])
         cube([length,rd_sq2,rd_sq2], center = true);
-        
+
         rail_endcap();
         translate([length,0,0])
         rail_endcap();
     }
 }
 
-
 module rail_endcap(){
-    rotate_extrude() 
+    rotate_extrude()
     intersection() {
         translate(rail_depth * xv)
         square(2*rail_depth, center = true);
@@ -663,7 +623,6 @@ module rail_endcap(){
         square(rd_sq2, center= true);
     }
 }
-
 
 module interior_fillet (r1, r2, angle = 90){
 
@@ -695,14 +654,11 @@ module  delta_store(){
     inner_dim = [
     delta_width,
     stack_hypot,
-    // max_height
     delta_box_height
     ];
 
     union() {
 
-        // translate([0, stack_thick, stack_back_tall])
-        // sphere(1);
         translate(wall_thickness * dv)
         intersection() {
             translate ([-epsilon,0, - stair_height ])
@@ -771,54 +727,51 @@ module rounded_box( inside_dim , closed = false, bottomed = true){
     }
 }
 
-
 module rail_hull(){
-         translate([
-                    mega_lid_interior.x - wall_radius - tolerance,
-                    0 - tolerance,
-                    0,
-                    ])
-                {
-                    hull() {
-                      
-                    rail_endcap();
-                    translate([
-                        tolerance + wall_thickness,
-                        -wall_radius ,
-                        0
-                        ])
-                    sphere(wall_radius);
-                    translate([
-                        - tolerance,
-                        -wall_radius ,
-                        0
-                        ])
-                    sphere(wall_radius);
-                    }
-                    
-                    
-                    
-                    translate([
-                    0,
-                    lid_interior.y ,
-                    0
-                    ])
-                    hull() {
-                      
-                    rail_endcap();
-                    translate([
-                        tolerance + wall_thickness,
-                        wall_radius,
-                        0
-                        ])
-                    sphere(wall_radius);
-                    
-                    translate([
-                        - tolerance,
-                        wall_radius,
-                        0
-                        ])
-                    sphere(wall_radius);
-                    }
-                }
+   translate([
+    mega_lid_interior.x - wall_radius - tolerance,
+    0 - tolerance,
+    0,
+    ])
+   {
+    hull() {
+
+        rail_endcap();
+        translate([
+            tolerance + wall_thickness,
+            -wall_radius ,
+            0
+            ])
+        sphere(wall_radius);
+        translate([
+            - tolerance,
+            -wall_radius ,
+            0
+            ])
+        sphere(wall_radius);
+    }
+
+    translate([
+        0,
+        lid_interior.y ,
+        0
+        ])
+    hull() {
+
+        rail_endcap();
+        translate([
+            tolerance + wall_thickness,
+            wall_radius,
+            0
+            ])
+        sphere(wall_radius);
+
+        translate([
+            - tolerance,
+            wall_radius,
+            0
+            ])
+        sphere(wall_radius);
+    }
+}
 }
