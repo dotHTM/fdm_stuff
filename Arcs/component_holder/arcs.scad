@@ -578,27 +578,43 @@ module card_lid(){
 
         // upper rails
         translate([0,0,mega_lid_interior.z + wall_radius ]) {
-            union() {
-                translate( - wall_radius * xv )
+            
+            translate( [ - wall_radius ,+ tolerance,0 ] ){
                 rail( end_width + 2 * wall_thickness);
-
-                translate( (mega_lid_interior.y - 2 *tolerance) * yv )
-                translate( - wall_radius * xv )
-                rail( end_width + 2 * wall_thickness);
+                translate([ 0, -rail_depth + 2 * tolerance, - rail_depth])
+                cube([ end_width + 2 * wall_thickness , rail_depth , 2 * rail_depth]);
             }
+            
+            translate( (mega_lid_interior.y - 3 * tolerance) * yv )
+            translate( - wall_radius * xv )
+            {
+            
+            rail( end_width + 2 * wall_thickness);
+            translate([ 0, - 2 * tolerance , - rail_depth])
+                cube([ end_width + 2 * wall_thickness , rail_depth , 2 * rail_depth]);
+            }
+            
+            
+                
+
         }
 
         for (i = [wall_thickness, lid_interior.x]){
             for (j = [0 , wall_thickness]){
-                translate([
-                    i,
-                    lid_interior.y/2,
-                    mega_lid_interior.z + j
-                    ])
-                scale([1,3,2/3])
-                sphere(wall_radius);
+                for (k = ( lid_interior.y/2 - 2.5 * wall_thickness) * [ -1, 0, 1]){
+                    for ( t = [ 0 : 1.5 * wall_thickness : ( k == 0 ? 0 : 20 ) ]){
+                    translate([
+                        i + ( i != wall_thickness  ? -1: 1) * t,
+                        lid_interior.y/2 + k,
+                        mega_lid_interior.z + j
+                        ])
+                    scale([1,3,2/3])
+                    sphere(wall_radius);
+                    }
+                }
             }
         }
+
     }
 }
 
@@ -728,12 +744,12 @@ module rounded_box( inside_dim , closed = false, bottomed = true){
 }
 
 module rail_hull(){
-   translate([
+ translate([
     mega_lid_interior.x - wall_radius - tolerance,
     0 - tolerance,
     0,
     ])
-   {
+ {
     hull() {
 
         rail_endcap();
