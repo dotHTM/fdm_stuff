@@ -1,0 +1,29 @@
+{
+    "fileFormatVersion": "1",
+    "parameterSets": {
+        "New set 1": {
+            "agents": "onside",
+            "closed_core": "false",
+            "cut": "false",
+            "cut_x": "0",
+            "cut_y": "0",
+            "cut_z": "0",
+            "delta_altitude_long": "30",
+            "delta_altitude_short": "24",
+            "delta_step_long": "3",
+            "delta_thick": "2.2000000000000002",
+            "delta_width": "30",
+            "epsilon_scale": "10",
+            "mega": "true",
+            "rail_depth": "1.4000000000000001",
+            "rail_support_offest": "1.4000000000000001",
+            "show_body": "true",
+            "show_card_lid": "true",
+            "show_lid": "true",
+            "test": "true",
+            "top_deck": "13",
+            "wall_thickness": "2",
+            "wooden_bin_depth": "42"
+        }
+    }
+}
