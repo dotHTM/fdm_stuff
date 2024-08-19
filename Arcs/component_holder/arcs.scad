@@ -628,10 +628,7 @@ module rail(length = end_width + 2 * epsilon ){
         rotate([45,0,0])
         translate([length/2,0,0])
         cube([length,rd_sq2,rd_sq2], center = true);
-
-        rail_endcap();
         translate([length,0,0])
-        rail_endcap();
     }
 }
 
@@ -756,7 +753,6 @@ module rail_hull(){
     ])
  {
     hull() {
-
         rail_endcap();
         translate([
             tolerance + wall_thickness,

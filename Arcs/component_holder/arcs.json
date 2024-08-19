@@ -13,7 +13,7 @@
             "delta_altitude_short": "25",
             "delta_step_long": "3",
             "delta_thick": "2.2000000000000002",
-            "delta_width": "30",
+            "delta_width": "29",
             "epsilon_scale": "10",
             "mega": "true",
             "rail_depth": "1",
@@ -25,7 +25,34 @@
             "tolerance": "0.10000000000000001",
             "top_deck": "10",
             "wall_thickness": "2",
-            "wooden_bin_depth": "42"
+            "wooden_bin_depth": "43"
+        },
+        "New set 1": {
+            "$fn": "30",
+            "agents": "onside",
+            "closed_core": "true",
+            "cut": "false",
+            "cut_x": "0",
+            "cut_y": "0",
+            "cut_z": "0",
+            "delta_altitude_long": "30",
+            "delta_altitude_short": "25",
+            "delta_step_long": "3",
+            "delta_thick": "2.2000000000000002",
+            "delta_width": "29",
+            "epsilon_scale": "10",
+            "mega": "true",
+            "rail_depth": "1",
+            "rail_support_offest": "2",
+            "retention_fn": "20",
+            "show_body": "true",
+            "show_card_lid": "true",
+            "show_lid": "true",
+            "test": "false",
+            "tolerance": "0.10000000000000001",
+            "top_deck": "10",
+            "wall_thickness": "2",
+            "wooden_bin_depth": "43"
         }
     }
 }
