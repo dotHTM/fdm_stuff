@@ -1,0 +1,11 @@
+{
+    "fileFormatVersion": "1",
+    "parameterSets": {
+        "New set 1": {
+            "center_offset": "15.75",
+            "height": "5",
+            "lw": "1.6200000000000001",
+            "pz": "0.01"
+        }
+    }
+}
