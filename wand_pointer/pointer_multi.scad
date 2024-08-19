@@ -1,5 +1,5 @@
-include <../scad_modules/math_tricks.scad>; 
-include <../scad_modules/t_slots.scad>; 
+include <../modules/math_tricks.scad>; 
+include <../modules/t_slots.scad>; 
 use <pointer.scad>; 
 
 $fn = 18;

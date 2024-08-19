@@ -1,4 +1,4 @@
-include <../scad_modules/math_tricks.scad>;
+include <../modules/math_tricks.scad>;
 $fn = 30;
 
 center_height = 4; 
