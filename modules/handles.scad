@@ -35,11 +35,6 @@ module grip_wand( height ,  detail_height ,  disc_height, center_offset, lw ){
     }
 }
 
-
-
-
-
-
 module handle_sword(){
     pommel_ro = 3.5;
     hilt_ro = 7;

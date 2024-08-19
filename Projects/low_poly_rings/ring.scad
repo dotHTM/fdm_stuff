@@ -30,40 +30,40 @@ ratio = 2.11;
 
 
 
-rotate([90])
-rotate(90)
-rotate([90])
-rotate(90)
-{
+// rotate([90])
+// rotate(90)
+// rotate([90])
+// rotate(90)
+// {
     
-rotate([ 0, 90 , 0 ])
-rotate(90)
-sphere(7+1.1, $fn = 10);
+// rotate([ 0, 90 , 0 ])
+// rotate(90)
+// sphere(7+1.1, $fn = 10);
 
-rotate(90)
-sonic_ring( r1, ratio, 14.8 );
-}
+// rotate(90)
+// sonic_ring( r1, ratio, 14.8 );
+// }
 
-rotate([90])
-rotate(90)
-{
+// rotate([90])
+// rotate(90)
+// {
     
-rotate([ 0, 90 , 0 ])
-rotate(0)
-sonic_ring( r1, ratio, 32.1 );
+// rotate([ 0, 90 , 0 ])
+// rotate(0)
+// sonic_ring( r1, ratio, 32.1 );
 
-rotate(90)
-sonic_ring( r1, ratio, 48.5 );
-}
+// rotate(90)
+// sonic_ring( r1, ratio, 48.5 );
+// }
 
-rotate([ 0, 90 , 0 ])
-sonic_ring( r1, ratio, 64 );
+// rotate([ 0, 90 , 0 ])
+// sonic_ring( r1, ratio, 64 );
 
-rotate(90)
-sonic_ring( r1, ratio, 78.8 );
+// rotate(90)
+// sonic_ring( r1, ratio, 78.8 );
 
-rotate([ 90, 0 , 0 ])
-sonic_ring( r1, 1, id );
+
+sonic_ring( 10, 2, 20.6 );
 
 
 
