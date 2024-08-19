@@ -1,4 +1,4 @@
-
+include <../modules/math_tricks.scad>; 
 
 module t_slot_slice( positive, part_window, interface_angle, t_round, t_width, t_thick, t_neck, t_neck_thick, t_height){
 
@@ -35,7 +35,7 @@ module t_slot( t_round, t_width, t_thick, t_neck, t_neck_thick, t_height){
             union(){
                 // neck slot
                 translate(
-                    [ -(t_neck - 2*t_round)/2 + pz, 0, 0 ]
+                    [ -(t_neck - 2*t_round)/2 + practically_zero, 0, 0 ]
                     )
                 square(
                     [ t_neck -  2*t_round, t_neck_thick -  2*t_round ],

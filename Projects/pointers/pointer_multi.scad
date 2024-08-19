@@ -1,5 +1,7 @@
-include <../modules/math_tricks.scad>; 
-include <../modules/t_slots.scad>; 
+include <../../modules/math_tricks.scad>; 
+include <../../modules/t_slots.scad>; 
+include <../../modules/handles.scad>; 
+
 use <pointer.scad>; 
 
 $fn = 18;
@@ -12,7 +14,7 @@ t_neck_thick = 2;
 t_height= 100;
 
 part_window = 1000;
-interface_angle = 30;
+interface_angle = 45;
 
 
 height = 6;
