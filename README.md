@@ -10,6 +10,8 @@ Modules directory contains reusable OpenSCAD code.
 
 ## Arcs Component Holders
 
+For the [very excellent board game](https://www.youtube.com/watch?v=iP36OXiPkoo&t=158s&pp=ygUJc3VzZCBhcmNz) [and it's campaign expansion](https://www.youtube.com/watch?v=_GUatRy1LRk&pp=ygUJc3VzZCBhcmNz), ARCS by [Leder Games](https://ledergames.com/collections/full-catalog/arcs).
+
 ![Component Holders](previews/arcs_compents.png)
 
 Player component organizers for quick to-the-table setup & play! Holds all player components from the base game and campaign expansion!
@@ -45,7 +47,7 @@ Import SVG into your slicer of choice, confirm scale by setting the Y height of 
 
 Standard US playing cards are just under 64 mm, so three wide plus a little wiggle for comfort should be able to fan several per row.
 
-I like the version "with token bin" to be printed one card wide, so that several can be printed in a multi-color filament to get my four player shades in one print job. Good for an auction system like the court in Arcs.
+I like the version "with token bin" to be printed one card wide, so that several can be printed in a multi-color filament to get my four player shades in one print job. Good for an auction system like the court deck in Arcs.
 
 ## Low Poly Rings
 
