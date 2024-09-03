@@ -1,10 +1,19 @@
 
+sqrt2 = sqrt(2);
+sqrt3 = sqrt(3);
+
 $epsilon_scale = 4;
 epsilon = 10^( - $epsilon_scale);
 
 practically_zero = 10^-8;
 
 function pz( value, negative = false ) = value == 0 ? ( negative ? -practically_zero : practically_zero ) : value; 
+
+function pass_positive(value) = value >= 0 ? value : 0;
+
+function pass_positive_max(value, maximum) = if_positive(value<= maximum ? value : maximum );
+
+function pass_between(value, low, high) = ( (low < high) ? (  (value < low) ? low : ( (high <= value) ? high : value ) ) : low  );
 
 // quick vectors
 xv = [ 1, 0, 0 ];
