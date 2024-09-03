@@ -1,0 +1,60 @@
+{
+    "fileFormatVersion": "1",
+    "parameterSets": {
+        "thick grip": {
+            "$champstfer": "2",
+            "$fn": "60",
+            "angle": "15",
+            "backfoot": "5",
+            "backfoot_altitude": "16",
+            "card_support": "40",
+            "gap_thick": "8",
+            "wall_grip": "12",
+            "wall_thick": "8"
+        },
+        "Z Beam": {
+            "$champstfer": "0.25",
+            "$fn": "60",
+            "angle": "18",
+            "backfoot": "29.039999999999999",
+            "backfoot_altitude": "26",
+            "card_support": "42",
+            "gap_thick": "2.1000000000000001",
+            "offset_x": "38.189999999999998",
+            "offset_y": "79.859999999999999",
+            "wall_grip": "8",
+            "wall_thick": "1.8999999999999999",
+            "z_beam": "true"
+        },
+        "z beam chonk": {
+            "$champstfer": "0.5",
+            "$fn": "60",
+            "angle": "18",
+            "backfoot": "33.579999999999998",
+            "backfoot_altitude": "64",
+            "card_support": "42",
+            "gap_thick": "4.2000000000000002",
+            "length": "10",
+            "offset_x": "52.100000000000001",
+            "offset_y": "83.859999999999999",
+            "wall_grip": "8",
+            "wall_thick": "3.8999999999999999",
+            "z_beam": "true"
+        },
+        "z beam chungus": {
+            "$champstfer": "1",
+            "$fn": "60",
+            "angle": "18",
+            "backfoot": "42.480000000000004",
+            "backfoot_altitude": "64",
+            "card_support": "42",
+            "gap_thick": "8.4000000000000004",
+            "length": "10",
+            "offset_x": "79.5",
+            "offset_y": "91.75",
+            "wall_grip": "8",
+            "wall_thick": "7.7999999999999998",
+            "z_beam": "true"
+        }
+    }
+}

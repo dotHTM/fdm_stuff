@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 750 1051" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-2462,0)">
+        <g id="card-holder--hand-drawn-" serif:id="card holder (hand drawn)" transform="matrix(1,0,0,1,1270.79,0)">
+            <rect x="1191.6" y="0" width="748.888" height="1050.31" style="fill:none;"/>
+            <g transform="matrix(1,0,0,1,-323.116,-862.037)">
+                <path d="M1612.69,1843.82L1645.32,1722.05L1673.97,1721.43L1680.68,1729.99L1668.83,1780.6L1681.8,1799.53L1711.34,1799.53L1728.05,1783.36L1835.68,1367.13L1863.04,1367.13L1869.97,1377.43L1857.94,1426.84L1870.73,1445.07L1900.15,1445.07L1917.44,1426.79L2026.96,1012.78L2055.51,1012.07L2061.91,1020.31L1901,1702.46L1918.39,1727.11L2153.24,1800.09L2158.82,1843.3L1612.69,1843.82Z" style="fill:rgb(255,144,243);stroke:rgb(35,31,32);stroke-width:4.17px;"/>
+            </g>
+        </g>
+    </g>
+</svg>
