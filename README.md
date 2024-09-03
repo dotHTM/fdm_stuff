@@ -77,7 +77,7 @@ Mac OS inspired pixel pointers. I accidentally added a point that made a sword/d
 **Hand**
 ![os hand](previews/pointer_os_hand.png)
 
-# Modules
+# OpenSCAD Modules
 
 ## `math_tricks.scad`
 
