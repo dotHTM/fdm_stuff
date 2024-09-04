@@ -25,7 +25,7 @@ Additionally, drawer boxes will tame the campaign fate tokens. Tokens are loaded
 Designed in OnShape:
 
 - [component holder](https://cad.onshape.com/documents/f8baa16c513774a1b4c4d1ff/w/156d0fb384fcc7c2bd21cdf2/e/2bc8450ed0d50105c287a671)
-- [token boxes]https://cad.onshape.com/documents/398fe0b94c3db610b38cdb79/w/25091c70bdfcc1784639c936/e/1cc49baec7d96f1b5932d371
+- [token boxes](https://cad.onshape.com/documents/398fe0b94c3db610b38cdb79/w/25091c70bdfcc1784639c936/e/1cc49baec7d96f1b5932d371)
 
 ## Shard of Nargasil
 
