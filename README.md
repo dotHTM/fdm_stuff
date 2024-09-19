@@ -12,20 +12,36 @@ Modules directory contains reusable OpenSCAD code.
 
 For the [very excellent board game](https://www.youtube.com/watch?v=iP36OXiPkoo&t=158s&pp=ygUJc3VzZCBhcmNz) [and it's campaign expansion](https://www.youtube.com/watch?v=_GUatRy1LRk&pp=ygUJc3VzZCBhcmNz), ARCS by [Leder Games](https://ledergames.com/collections/full-catalog/arcs).
 
-![Component Holders](previews/arcs_components.png)
-
 Player component organizers for quick to-the-table setup & play! Holds all player components from the base game and campaign expansion!
 
-Fits in the campaign box with the save state bin and dividers (print at least one for each player, label or print in color coded filaments) to maintain functionality of the original vacuum-formed trays.
+![Component Organizer](previews/arcs_component_tray_and_lid.png)
 
-![Token Storage](previews/arcs_tokens.png)
+Sliced with mouse ears, one color (per piece) Trays (black/dark) and Lids (per player color):
+
+![trays, 4x](previews/arcs_component_tray_sliced.png)
+![lid](previews/arcs_component_lid_sliced.png)
+
+Fits in the campaign box with the save state boxes.
+
+![Save State Box](previews/arcs_save_box.png)
+
+Sliced, with two-tone colors:
+
+![save tray](previews/arcs_save_tray_sliced.png)
+![save case](previews/arcs_save_case_sliced.png)
 
 Additionally, drawer boxes will tame the campaign fate tokens. Tokens are loaded as stacks into each of the wells in order of their fate number, ending in the "Bag A/B" pairs and skipping over the non circular tokens that are stored in tray C. Print three of the cases (one for each tray).
+
+![Token Storage](previews/arcs_tokens.png)
 
 Designed in OnShape:
 
 - [component holder](https://cad.onshape.com/documents/f8baa16c513774a1b4c4d1ff/w/156d0fb384fcc7c2bd21cdf2/e/2bc8450ed0d50105c287a671)
 - [token boxes](https://cad.onshape.com/documents/398fe0b94c3db610b38cdb79/w/25091c70bdfcc1784639c936/e/1cc49baec7d96f1b5932d371)
+
+
+
+
 
 ## Shard of Nargasil
 
