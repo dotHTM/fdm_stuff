@@ -12,42 +12,53 @@ Modules directory contains reusable OpenSCAD code.
 
 For the [very excellent board game](https://www.youtube.com/watch?v=iP36OXiPkoo&t=158s&pp=ygUJc3VzZCBhcmNz) [and it's campaign expansion](https://www.youtube.com/watch?v=_GUatRy1LRk&pp=ygUJc3VzZCBhcmNz), ARCS by [Leder Games](https://ledergames.com/collections/full-catalog/arcs).
 
-Player component organizers for quick to-the-table setup & play! Holds all player components from the base game and campaign expansion!
 
-![Component Organizer](previews/arcs_component_tray_and_lid.png)
+The base game of "Arcs: Conflict and Collapse in the Reach" is really improved by the bank vacuum-form tray that comes along with “The Blighted Reach” campaign expansion. However, the per-player trays don't pack well into the base game box for those who have both but haven't combined down into the larger box. Also, It's valuable information to the player to know how many Ships or Agents one has left while bargaining and planning.
 
-Sliced with mouse ears, one color (per piece) Trays (black/dark) and Lids (per player color):
+![Component Organizer Closed](previews/arcs/component_closed.png)
+![Component Organizer Open](previews/arcs/component_open.png)
 
-![trays, 4x](previews/arcs_component_tray_sliced.png)
-![lid](previews/arcs_component_lid_sliced.png)
+I love the wooden components so much, they have so much charm to them.
 
-Fits in the campaign box with the save state boxes.
+These organizer trays store all wooden and cardboard player components from both the base game and the campaign expansion, and fit into the deep well of the campaign box along with save state deck boxes. The organizer trays feature a locking edge, so that they can't be opened upside down which avoids spilling!
 
-![Save State Box](previews/arcs_save_box.png)
+The various decks of the base game can be stored in the Campaign Save State Boxes, until you want to integrate your base copy into a campaign box. Then the deck boxes are your per-player save states. Two functions with one object, less printing when you upgrade and less waste overall!
 
-Sliced, with two-tone colors:
+I recommend printing the organizer trays in a dark contrasting color (a spacey black for example!) and pairing each with a player color coordinated lids.
 
-![save tray](previews/arcs_save_tray_sliced.png)
-![save case](previews/arcs_save_case_sliced.png)
+Provided Mouse-eared STLs and bgcode files are oriented to maximize potential variation from multi-colored filaments, if you choose to use such.
 
-Additionally, drawer boxes will tame the campaign fate tokens. Tokens are loaded as stacks into each of the wells in order of their fate number, ending in the "Bag A/B" pairs and skipping over the non circular tokens that are stored in tray C. Print three of the cases (one for each tray).
+One each of the component and deck lids:
+![sliced model per player lids, component and deck](previews/arcs/player_lids.png)
 
-![Token Storage](previews/arcs_tokens.png)
+Component trays, x4:
+![sliced model of four component trays](previews/arcs/component_trays.png)
+
+Deck trays, x4:
+![sliced model of four deck trays](previews/arcs/deck_trays.png)
+
+~~Three boxes are also provided to store the smaller campaign fate tokens in fate number order, and a larger open box for the large fate tokens. When I printed mine out, I ran out of black, which introduced me to the two-tone aesthetic.~~
+
+![Token Storage](previews/arcs/tokens.png)
+![Token Tray Sliced](previews/arcs/token_trays.png)
+![Token Tray Case](previews/arcs/token_case.png)
+
+Also included is the SVG for a large form replacement wedge for laying down instead of the “hyperlanes” during non-campaign setup instructions. I cut this on my laser in 100pt chipboard, laminated with spacey, decorative paper and painted the edge, although one could print the SVG as a plate, extruded to 2-3mm or 0.1 inch as desired.
+
+This perhaps is the tenth or later generation of exploring these objects. Careful attention to filets, chamfers, mouse-ears, and thicknesses have been considered. 
+
 
 Designed in OnShape:
 
-- [component holder](https://cad.onshape.com/documents/f8baa16c513774a1b4c4d1ff/w/156d0fb384fcc7c2bd21cdf2/e/2bc8450ed0d50105c287a671)
-- [token boxes](https://cad.onshape.com/documents/398fe0b94c3db610b38cdb79/w/25091c70bdfcc1784639c936/e/1cc49baec7d96f1b5932d371)
+- [Component Holder](https://cad.onshape.com/documents/f8baa16c513774a1b4c4d1ff/w/156d0fb384fcc7c2bd21cdf2/e/2bc8450ed0d50105c287a671)
+- [Save State Box](https://cad.onshape.com/documents/398fe0b94c3db610b38cdb79/w/e47fcedab68673560034f3a2/e/1cc49baec7d96f1b5932d371)
+- [Token Boxes](https://cad.onshape.com/documents/398fe0b94c3db610b38cdb79/w/25091c70bdfcc1784639c936/e/1cc49baec7d96f1b5932d371)
 
-
-
-
-
-## Shard of Nargasil
+## Shattered Dagger
 
 ![prop shattered dagger](previews/shard_dagger.png)
 
-A prop dagger (as big as would fit on my Prusa MK4), themed lightly on the "Shards of Narsil" from "The Lord of the Rings" film prop. Name is a mix between the LotR sword and my wife taking about the "nargles" interfering with me.
+A prop dagger (as big as would fit on my Prusa MK4), themed lightly on the "Shards of Narsil" from "The Lord of the Rings" film prop.
 
 When importing into the slicer, you can make a textured grip by using the "Add Modify > Load" in PrusaSlicer, and add the fuzzy-skin setting and enable. Import the `modify` part as normal to get the dimensions in case the slicer imports the modify-`modify` object too small (is this a bug) and then visually align it as you can in the Y-axis ( X and Z should likely be both be zero when in Object Coordinates). I angled the group at 35º to fit on my 250 x 210 mm bed.
 
