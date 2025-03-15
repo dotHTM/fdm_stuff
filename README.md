@@ -12,39 +12,39 @@ ALL FILES PROVIDED AS IS AND WITH NO WARRANTY. MIT/BSD LICENSE UNLESS OTHERWISE 
 
 Projects and experiments for printing:
 
-- [filament mixing](Projects/filament mixing (wip))
+- [filament mixing](Projects%2Ffilament%20mixing%20%28wip%29)
  
 Games:
 
-- [Arcs Storage](Projects/Arcs Storage)
-- [Card holders](Projects/Card holders)
+- [Arcs Storage](Projects%2FArcs%20Storage)
+- [Card holders](Projects%2FCard%20holders)
 
 Toys & Education:
 
-- [stim handle](Projects/stim handle)
-- [pointers](Projects/pointers)
-- [shattered dagger](Projects/shattered dagger)
-- [whistles](Projects/whistles)
-- [shells](Projects/shells) (untested)
+- [stim handle](Projects%2Fstim%20handle)
+- [pointers](Projects%2Fpointers)
+- [shattered dagger](Projects%2Fshattered%20dagger)
+- [whistles](Projects%2Fwhistles)
+- [shells](Projects%2Fshells) (untested)
 
 Organization:
 
-- [arkfeild flashlight accessories](Projects/arkfeild)
-- [Can Holders](Projects/Can Holders)
+- [arkfeild flashlight accessories](Projects%2Farkfeild)
+- [Can Holders](Projects%2FCan%20Holders)
 
 Clothing and "Jewelry":
 
-- [Strap holders](Projects/Clothing)
-- [low_poly_rings](Projects/low_poly_rings)
+- [Strap holders](Projects%2FClothing)
+- [low_poly_rings](Projects%2Flow_poly_rings)
 
 Decoration:
 
-- [pottery](Projects/pottery)
-- [Slotted stain glass tree](Projects/Slotted stain glass tree)
+- [pottery](Projects%2Fpottery)
+- [Slotted stain glass tree](Projects%2FSlotted%20stain%20glass tree)
 
 Recycling parts:
 
-- [Grip Strength](Projects/Grip Strength)
+- [Grip Strength](Projects%2FGrip%20Strength)
 
 
 # OpenSCAD Modules
