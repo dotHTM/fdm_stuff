@@ -27,11 +27,7 @@ Component trays, x4:
 Deck trays, x4:
 ![sliced model of four deck trays](previews/deck_trays.png)
 
-~~Three boxes are also provided to store the smaller campaign fate tokens in fate number order, and a larger open box for the large fate tokens. When I printed mine out, I ran out of black, which introduced me to the two-tone aesthetic.~~
-
-![Token Storage](previews/tokens.png)
-![Token Tray Sliced](previews/token_trays.png)
-![Token Tray Case](previews/token_case.png)
+Three boxes are also provided to store the smaller campaign fate tokens in fate number order, and a larger open box for the large fate tokens.
 
 Also included is the SVG for a large form replacement wedge for laying down instead of the “hyperlanes” during non-campaign setup instructions. I cut this on my laser in 100pt chipboard, laminated with spacey, decorative paper and painted the edge, although one could print the SVG as a plate, extruded to 2-3mm or 0.1 inch as desired.
 
