@@ -1,0 +1,21 @@
+{
+    "fileFormatVersion": "1",
+    "parameterSets": {
+        "New set 1": {
+            "allowed_overhang_angle": "35",
+            "backset_spikes": "2",
+            "chamfer_size": "1",
+            "direction": "1",
+            "handle_end_diameter": "20",
+            "handle_fn_x": "48",
+            "handle_length": "100",
+            "handle_middle_diameter": "30",
+            "hole_diameter": "0",
+            "rotate_step": "137.50776400000001",
+            "spike_count": "321",
+            "spike_coverage": "0.80000000000000004",
+            "spike_fn": "24",
+            "spike_point_length": "3.5"
+        }
+    }
+}

@@ -21,7 +21,7 @@ direction = 1; // [1:left-hand, -1:right-hand ]
 // How long a thing you want to hold.
 handle_length = 100; // [10:250] 
 // How wide a thing you want to hold.
-handle_middle_diameter = 30 ; // [10:1:150]
+handle_middle_diameter = 40 ; // [10:1:150]
 // How large are the ends?
 handle_end_diameter = 20;// [10:1:150]
 // Put a chamfer on the ends.
@@ -43,7 +43,7 @@ spike_coverage = .80; // [.10:.01: .90]
 rotate_step = 137.507764; // angle
 
 // How far do you want to push your printer's overhang?
-allowed_overhang_angle = 35;  // [20:1:50]
+allowed_overhang_angle = 30;  // [20:1:50]
 
 // Spike resolution:
 spike_fn = 24; 
@@ -51,11 +51,11 @@ spike_fn = 24;
 handle_fn_x = 48; 
 
 // Calculations
-swell  =  handle_middle_diameter - handle_end_diameter;
 // radii
 handle_end_radius = handle_end_diameter / 2 -chamfer_size ; // distance
 handle_middle_radius = handle_middle_diameter / 2 -chamfer_size ; // distance
-swell_radius = swell/2 ;
+swell_radius = handle_middle_radius - handle_end_radius;
+swell = 2 * swell_radius;
 hole_radius = hole_diameter /2 ;
 
 // length accomadations
@@ -142,11 +142,14 @@ module handle(){
         [ 0,             chamfer_size ], 
     ];
     
-    // color("#f008")
-    rotate_extrude( angle = 360  )
-    minkowski(){  // chamfer on ends of handle
+    color("#f002")
+    // rotate_extrude( angle = 360  )
+    minkowski()
+    {  // chamfer on ends of handle
+        #color("#f00")
         polygon(chamfering_poly_points);
         
+        #color("#0f04")
         if ( swell_radius < 0 ) {
             // apple core
             difference(){
@@ -211,9 +214,9 @@ module hole(){
 
 difference() {
     union(){
-        color("#0f0")
-        spikes();
-        color("#f66")
+        // color("#0f0")
+        // spikes();
+        // color("#f664")
         handle();
     }
     if (0 < hole_diameter ) { hole(); }

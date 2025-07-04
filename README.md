@@ -6,46 +6,13 @@ OpenSCAD files and STLs.
 
 Modules directory contains reusable OpenSCAD code.
 
+Unless an OpenSCAD file is provided or otherwise noted, many of these STL files were created in OnShape under a non-commercial use license.
+
 ALL FILES PROVIDED AS IS AND WITH NO WARRANTY. MIT/BSD LICENSE UNLESS OTHERWISE NOTED.
 
 # Projects
 
-Projects and experiments for printing:
-
-- [filament mixing](Projects%2Ffilament%20mixing%20%28wip%29)
- 
-Games:
-
-- [Arcs Storage](Projects%2FArcs%20Storage)
-- [Card holders](Projects%2FCard%20holders)
-
-Toys & Education:
-
-- [stim handle](Projects%2Fstim%20handle)
-- [pointers](Projects%2Fpointers)
-- [shattered dagger](Projects%2Fshattered%20dagger)
-- [whistles](Projects%2Fwhistles)
-- [shells](Projects%2Fshells) (untested)
-
-Organization:
-
-- [arkfeild flashlight accessories](Projects%2Farkfeild)
-- [Can Holders](Projects%2FCan%20Holders)
-
-Clothing and "Jewelry":
-
-- [Strap holders](Projects%2FClothing)
-- [low_poly_rings](Projects%2Flow_poly_rings)
-
-Decoration:
-
-- [pottery](Projects%2Fpottery)
-- [Slotted stain glass tree](Projects%2FSlotted%20stain%20glass tree)
-
-Recycling parts:
-
-- [Grip Strength](Projects%2FGrip%20Strength)
-
+I reorganized this section of the repo, so new descriptions will be coming "soon". Just explore the folders.
 
 # OpenSCAD Modules
 
